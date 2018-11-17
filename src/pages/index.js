@@ -6,9 +6,14 @@ import Image from '../components/image'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Learn to Design & Code React Apps</h1>
-    <p>Complete courses about the best tools and design systems. Prototype and build apps with react and swift</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="Hero">
+        <div className="HeroGroup">
+          <h1>Learn to Design & Code React Apps</h1>
+          <p>Complete courses about the best tools and design systems. Prototype and build apps with react and swift</p>
+          <Link to="/page-2/">Watch the Video</Link>
+        </div>
+    </div>
+    
   </Layout>
 )
 

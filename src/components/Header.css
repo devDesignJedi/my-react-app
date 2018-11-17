@@ -1,0 +1,13 @@
+.Header {
+    position: fixed; /* this will float the header on top of the background */
+    width: 100%; /* because it is a position fixed we need to set the width to 100% */
+    padding: 50px 0;
+    z-index: 100; /* why z-index? tbecause we want our always be on top of everything - because as soon as you start using position fixed or absolute - sometimes when you multiple of them - some of them might be on top or they might be hidden by others - so z-index provides a heieracrchy where you can set a number - and set a high number for something you will always be on top of everything and a low number for something like 1 or 0 which will be at the base */
+}
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
